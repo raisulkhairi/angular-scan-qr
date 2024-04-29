@@ -1,10 +1,10 @@
 <div class="relative border border-red-700 h-screen">
-    <ngx-scanner-qrcode #action="scanner" [constraints]="contraint" (play)="true" (event)="onScanSuccess($event)"></ngx-scanner-qrcode>
+    <ngx-scanner-qrcode #action="scanner" [constraints]="contraint" (event)="onScanSuccess($event)"></ngx-scanner-qrcode>
     <div class="absolute w-full h-full top-0 left-0 z-10 bg-[#00000073]"></div>
 </div>
 <!-- data  -->
-<!-- <span>{{ action.data.value | json }}</span>value -->
-<!-- <span>{{ action.data | async | json }}</span>async -->
+<span>{{ action.data.value | json }}</span>value
+<span>{{ action.data | async | json }}</span>async
 
 <!-- Loading -->
 <!-- <p *ngIf="action.isLoading">⌛ Loading...</p> -->
