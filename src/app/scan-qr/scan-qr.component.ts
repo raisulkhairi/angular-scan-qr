@@ -9,7 +9,7 @@ import { NgxScannerQrcodeComponent } from 'ngx-scanner-qrcode';
 export class ScanQrComponent implements AfterViewInit {
   @ViewChild('action') scanner!: NgxScannerQrcodeComponent;
 
-  contraints = {
+  contraint = {
     audio: false,
     video: {
       width: {
@@ -30,6 +30,8 @@ export class ScanQrComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.scanner.start(); // Automatically start the camera
+   let result =  this.scanner.constraints = this.contraint;
+   console.log(result)
   }
 
   onScanSuccess(data: any) {
