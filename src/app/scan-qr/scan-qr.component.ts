@@ -10,6 +10,7 @@ export class ScanQrComponent implements AfterViewInit {
   @ViewChild('action') scanner!: NgxScannerQrcodeComponent;
 
   contraints = {
+    audio: false,
     video: {
       width: {
         min: 1280,
