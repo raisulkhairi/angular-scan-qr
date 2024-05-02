@@ -1,7 +1,7 @@
 .container-scanner {
     ::ng-deep {
         video {
-            height: 100dvh;
+            height: 100vh;
         }
     }
 }
@@ -17,16 +17,16 @@
     border-top: 122px solid #0000009c;
     border-left: 28px solid #0000009c;
     border-right: 28px solid #0000009c;
-}   
+}
 
 .container-dashed {
-       position: fixed;
-       top: 123px;
-       z-index: 2;
-       height: 100dvh;
-       top: 0;
-       width: 100%;
-      
+    position: fixed;
+    top: 123px;
+    z-index: 2;
+    height: 100dvh;
+    top: 0;
+    width: 100%;
+
 }
 
 .dashed {
