@@ -1,4 +1,11 @@
-<ngx-scanner-qrcode #action="scanner" [constraints]="contraint" (event)="onScanSuccess($event)"></ngx-scanner-qrcode>
+<div class="container-scanner">
+    <div class="frame"></div>
+    <div class="container-dashed">
+        <div class="dashed"></div>
+    </div>
+    <ngx-scanner-qrcode #action="scanner" [constraints]="contraint"
+        (event)="onScanSuccess($event)"></ngx-scanner-qrcode>
+</div>
 <!-- data  -->
 <span>{{ action.data.value | json }}</span>value
 <span>{{ action.data | async | json }}</span>async

@@ -1,5 +1,41 @@
-// ::ng-deep {
-//     canvas {
-//         height: 100vh !important;
-//     }
-// }
+.container-scanner {
+    ::ng-deep {
+        video {
+            height: 100vh;
+        }
+    }
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    border-bottom: 255px solid #0000009c;
+    border-top: 122px solid #0000009c;
+    border-left: 28px solid #0000009c;
+    border-right: 28px solid #0000009c;
+}   
+
+.container-dashed {
+       position: fixed;
+       top: 123px;
+       z-index: 2;
+       height: 100vh;
+       top: 0;
+       width: 100%;
+      
+}
+
+.dashed {
+    border: 2px dashed black;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    left: 28px;
+    right: 28px;
+    bottom: 252px;
+    top: 122px;
+}

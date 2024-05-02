@@ -13,7 +13,7 @@ LOAD_WASM().subscribe();
   declarations: [
     AppComponent,
     ScanQrComponent,
-    CameraPreviewComponent
+    CameraPreviewComponent,
   ],
   imports: [
     BrowserModule,
