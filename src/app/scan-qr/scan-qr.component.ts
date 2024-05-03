@@ -14,16 +14,13 @@ export class ScanQrComponent implements AfterViewInit {
   contraint = {
     audio: false,
     video: {
-      facingMode: {
-        exact: 'environment'
-      }
+      facingMode: 'user'
     }
   }
 
   ngAfterViewInit() {
     this.scanner.start();
     this.scanner.constraints = this.contraint;
-    this.scanner.canvasStyles = [{ lineWidth: 0, strokeStyle: 'transparent', fillStyle: 'transparent' },{ font: '15px serif', strokeStyle: 'transparent', fillStyle: 'transparent' }]
   }
 
   onScanSuccess(data: any) {
