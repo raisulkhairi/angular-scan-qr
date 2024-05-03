@@ -1,7 +1,12 @@
 .container-scanner {
+    overscroll-behavior-y: none;
+
     ::ng-deep {
         video {
             height: 100dvh !important;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
 }
