@@ -4,6 +4,7 @@
     ::ng-deep {
         video {
             height: 100vh !important;
+            z-index: 100;
         }
     }
 }
@@ -25,7 +26,7 @@
 .container-dashed {
     position: fixed;
     top: 123px;
-    z-index: 2;
+    z-index: 1001;
     height: 100dvh;
     top: 0;
     width: 100%;
@@ -36,7 +37,7 @@
     border: 2px dashed #ffffff;
     border-radius: 14px;
     position: absolute;
-    z-index: 3;
+    z-index: 1002;
     margin: 0;
     left: 28px;
     right: 28px;
