@@ -4,9 +4,9 @@
     ::ng-deep {
         video {
             height: 100dvh !important;
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
         }
     }
 }
