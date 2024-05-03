@@ -23,6 +23,7 @@ export class ScanQrComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.scanner.start();
     this.scanner.constraints = this.contraint;
+    this.scanner.canvasStyles = [{ lineWidth: 1, strokeStyle: 'transparent', fillStyle: 'transparent' },{ font: '15px serif', strokeStyle: 'transparent', fillStyle: 'transparent' }]
   }
 
   onScanSuccess(data: any) {
