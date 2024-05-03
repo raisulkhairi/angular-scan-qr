@@ -1,23 +1,24 @@
 .container-scanner {
     ::ng-deep {
-        video {
+        canvas {
             height: 100vh;
         }
     }
 }
 
-.frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    z-index: 1;
-    border-bottom: 255px solid #0000009c;
-    border-top: 122px solid #0000009c;
-    border-left: 28px solid #0000009c;
-    border-right: 28px solid #0000009c;
-}
+// .frame {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100dvh;
+//     z-index: 1;
+//     border-bottom: 255px solid #0000009c;
+//     border-top: 122px solid #0000009c;
+//     border-left: 28px solid #0000009c;
+//     border-right: 28px solid #0000009c;
+//     box-shadow: 0 0 0 13px #333;
+// }
 
 .container-dashed {
     position: fixed;
@@ -30,7 +31,8 @@
 }
 
 .dashed {
-    border: 2px dashed black;
+    border: 2px dashed #ffffff;
+    border-radius: 14px;
     position: absolute;
     z-index: 3;
     margin: 0;
@@ -38,4 +40,5 @@
     right: 28px;
     bottom: 252px;
     top: 122px;
+    box-shadow: 0 0 0 100vh #0000009c
 }
