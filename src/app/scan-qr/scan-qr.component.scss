@@ -1,7 +1,7 @@
 .container-scanner {
     ::ng-deep {
-        canvas {
-            height: 100vh;
+        video {
+            height: 100vh !important;
         }
     }
 }
