@@ -14,10 +14,10 @@ export class ScanQrComponent implements AfterViewInit {
   contraint = {
     audio: false,
     video: {
-      facingMode: {
-        exact: 'environment'
-      }
-      // facingMode: 'user'
+      // facingMode: {
+      //   exact: 'environment'
+      // }
+      facingMode: 'user'
     }
   }
 
